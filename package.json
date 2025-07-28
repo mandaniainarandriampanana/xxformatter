@@ -1,0 +1,49 @@
+{
+  "name": "xxformatter",
+  "version": "1.0.4",
+  "description": "Universal string formatter with pattern support (like 'XX XX XX')",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "login": "npm login",
+    "build": "tsc",
+    "publish:on:npm": "npm run build && npm publish --access public",
+    "test": "vitest",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "format",
+    "string",
+    "typescript",
+    "formatter",
+    "mask",
+    "phone",
+    "credit",
+    "card",
+    "car",
+    "immatriculation"
+  ],
+  "author": "manda-randriampanana",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.3",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}
